@@ -1,4 +1,4 @@
-//sometimes the function we create is so simple and short that the job of doing the the "function activation, putting the function on stack, tracking all the return values and address etc" becomes much more complex than the actual code logic inside the function (i.e, compiler will take more time doing all those internal process than the actual function logic takes)
+//sometimes the function we create is so simple and short that the job of doing the the "function activation and the activation records, putting the function on stack, tracking all the return values and address etc" becomes much more complex than the actual code logic inside the function (i.e, compiler will take more time doing all those internal process than the actual function logic takes)
 //In those cases, we can use "inline" functions which would skip all those internal process told above, and directly do the execution
 //NOTE: creating a lot of inline function will result in large binary generation, which is ofcourse avoided
 
