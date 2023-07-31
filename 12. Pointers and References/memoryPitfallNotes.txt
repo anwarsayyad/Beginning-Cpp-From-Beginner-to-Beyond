@@ -1,0 +1,10 @@
+ ///////Potential Pointer Pitfalls/////////////
+ 1. Uninitialized pointers- garbage value stored in the Uninitialized variable may be something that clash with your actual data, although modern operating systems are smart enough to not produce such cases where Uninitialized variable would not hinder/wipe out the already present allocated memories, they are pretty good at protecting the datas, but its storongly recommended to initialize the pointer variables (infact any varibles in c++)
+
+ 2. Dangling Pointers: pointing to memories that are no longer valid(maybe since the function is terminated) or still pointing to the heap allocated memory when its already deallocated at the middle of the program 
+
+ 3. Not checking if new failed: if "new" was unable to allocate the memory. For such cases make sure to use exception handling to catch exceptions
+
+ 4. Memory Leak: forgetting to release the memory allocated in heap(forget to delete/deallocate). This can sometimes happen when pointers are pointing to the heap allocated memory inside of some function and when the function returns, with it there goes its only reference to point that memory to, so in that case, the heap memory would stay until the end (this becomes a disaster when memory is limited, and worst case the accumulation of many of those memory leaks would crash your application; and you would become a hero of the team, after fixing that bug in production easy peasy, because you were the culprit)
+
+ NOTE: most of the problems can be overcomed by using the smart pointers(which was the main reason they created it)
