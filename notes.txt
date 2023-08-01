@@ -1,0 +1,3 @@
+Skipped topics
+
+section 13. OOPS- move constructor(using advanced topic, l and r value reference)
