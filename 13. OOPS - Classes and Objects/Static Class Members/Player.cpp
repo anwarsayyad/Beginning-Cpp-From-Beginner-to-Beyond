@@ -9,7 +9,7 @@ Player::Player(std::string name_val, int health_val, int xp_val)
 {
     ++num_players;
 }
-Player::Player(const Player &source) : Player{source.name, source.health, source.xp}
+Player::Player(const Player &source) : Player{source.name, source.health, source.xp}//as we are delegating the initializationi list, the main constructor will be called and static variable "num_players" will be incremented, everytime the object is copied 
 {
 }
 Player::~Player()
