@@ -27,8 +27,9 @@ Mystring::Mystring(const Mystring &source) : str{nullptr} {
 }
 
 // Move constructor
-Mystring::Mystring(Mystring &&source) : str{source.str} {
-  std::cout << "LHS address: " <<str << " RHS address: " << source.str << std::endl;
+Mystring::Mystring(Mystring &&source) noexcept : str{source.str} {
+  std::cout << "LHS address: " <<&str << " RHS address: " << &source.str << " Assigned: " << *source.str << std::endl;
+
   source.str = nullptr;
   std::cout << "Move ctor called" << std::endl;
 }
@@ -48,7 +49,17 @@ Mystring &Mystring::operator=(
   return *this;
 }
 
-// move o
+// move operator assignment(Overloaded assignment)
+Mystring &Mystring::operator=(Mystring &&rhs) noexcept{
+  std::cout << "MOVE assignment" << std::endl;
+  if( this == &rhs){
+    return *this;
+  }
+  delete [] str;
+  str=rhs.str;
+  rhs.str = nullptr;
+  return *this;
+}
 
 // Destructor
 Mystring::~Mystring() { delete[] str; }

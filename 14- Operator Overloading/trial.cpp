@@ -9,7 +9,7 @@ private:
 public:
   Mystring();                       // No-args contstructor
   Mystring(const char *s);          // Overloaded contstructor
-  Mystring(const Mystring &source); // Copy constructor
+  Mystring( Mystring &source); // Copy constructor
   Mystring(Mystring &&source);      // Move ctor
   ~Mystring();                      // Destructor
   void display() const;
@@ -36,7 +36,7 @@ Mystring::Mystring(const char *s) : str{nullptr} {
 }
 
 // Copy constructor
-Mystring::Mystring(const Mystring &source) : str{nullptr} {
+Mystring::Mystring( Mystring &source) : str{nullptr} {
   str = new char[std::strlen(source.str) + 1];
   std::strcpy(str, source.str);
   std::cout << "Copy constructor called" <<std::endl;
@@ -44,9 +44,18 @@ Mystring::Mystring(const Mystring &source) : str{nullptr} {
 
 // Move constructor
 Mystring::Mystring(Mystring &&source) : str{source.str} {
-  std::cout << "LHS address: " <<str << " RHS address: " << source.str << std::endl;
+  std::cout << "LHS address: " <<&str << " RHS address: " << &source.str << std::endl;
   source.str = nullptr;
   std::cout << "Move ctor called" << std::endl;
+}
+
+//copy assignment
+Mystring &Mystring::operator=(const Mystring &rhs){
+  if(this == &rhs)
+    return *this;
+  delete [] str;
+  str = new char[std::strlen(rhs.str) + 1];
+  return *this;
 }
 
 // Destructor
@@ -65,6 +74,8 @@ const char *Mystring::get_str() const { return str; }
 
 int main() {
   Mystring a {"Aadarsh"};
-  Mystring b {Mystring{"Atul"}}; //Move constructor if defined, otherwise copy constructor will be called 
+  Mystring b {std::move(a)}; //Move constructor if defined, otherwise copy constructor will be called 
+  Mystring c;
+  c = b;
   return 0;
 }
