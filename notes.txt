@@ -1,6 +1,4 @@
 Skipped topics-
 
 section 13. Challenge
-
-
-Just holding the c++ journey for a while, I might have to learn Java/c# for some reasons
+section 14. Operator Overloading
