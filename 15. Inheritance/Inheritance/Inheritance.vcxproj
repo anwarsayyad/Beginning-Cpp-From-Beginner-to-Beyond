@@ -135,13 +135,6 @@
     <ClInclude Include="Account.h" />
     <ClInclude Include="SavingAccount.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\..\..\OneDrive\Pictures\Screenshots\InheritanceExample01.png" />
-    <Image Include="..\..\..\..\..\..\OneDrive\Pictures\Screenshots\InheritanceExample02.png" />
-    <Image Include="..\..\..\..\..\..\OneDrive\Pictures\Screenshots\publicInheritance.png" />
-    <Image Include="..\..\..\..\..\..\OneDrive\Pictures\Screenshots\protectedInheritance.png" />
-    <Image Include="..\..\..\..\..\..\OneDrive\Pictures\Screenshots\privateInheritance.png" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
