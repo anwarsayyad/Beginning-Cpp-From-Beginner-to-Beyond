@@ -2,5 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/15. Inheritance/.vs/15. Inheritance/v17
+#/15. Inheritance/.vs/15. Inheritance/v17
+#/15. Inheritance/.vs/15. Inheritance/FileContentIndex
 /15. Inheritance/.vs/15. Inheritance/FileContentIndex
+/15. Inheritance/.vs/15. Inheritance/v17
