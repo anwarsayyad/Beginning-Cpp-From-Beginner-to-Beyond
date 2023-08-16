@@ -129,10 +129,12 @@
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="Inheritance.cpp" />
+    <ClCompile Include="PrivateInheritance.cpp" />
     <ClCompile Include="SavingAccount.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
+    <ClInclude Include="PrivateInheritance.h" />
     <ClInclude Include="SavingAccount.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

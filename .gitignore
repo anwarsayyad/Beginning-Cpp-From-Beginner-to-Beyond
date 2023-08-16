@@ -1,8 +1,16 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+################################################################################ 
 
 #/15. Inheritance/.vs/15. Inheritance/v17
 #/15. Inheritance/.vs/15. Inheritance/FileContentIndex
 /15. Inheritance/.vs/15. Inheritance/FileContentIndex
 /15. Inheritance/.vs/15. Inheritance/v17
+/15. Inheritance/ConstructorDestructors_Inheritance/x64/Debug
+x64/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.aps
+.vs/
+

@@ -12,8 +12,14 @@ void Account::withdraw(double amount) {
 }
 
 Account::Account() :totalamt{ 0.0 } {
-	std::cout << "no-args ctor" << std::endl;
+	std::cout << "No-args ctor" << std::endl;
 }
+
+
+//Account::Account(double interestRate) :totalamt{ interestRate } {
+//
+//	std::cout << "One-args ctor" << std::endl;
+//}
 Account::~Account() {
 	std::cout << "destructed" << std::endl;
 }

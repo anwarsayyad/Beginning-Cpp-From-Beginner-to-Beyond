@@ -11,30 +11,30 @@ int main() {
 	acc.deposit(2000.0);
 	acc.withdraw(500.0);
 
-	std::cout << "\n";
+	//std::cout << "\n";
 
-	Account* p_acc{ nullptr };
-	p_acc = new Account();
-	p_acc->deposit(1000.0);
-	p_acc->withdraw(500.0);
-	delete p_acc;
+	//Account* p_acc{ nullptr };
+	//p_acc = new Account();
+	//p_acc->deposit(1000.0);
+	//p_acc->withdraw(500.0);
+	//delete p_acc;
 
-	// Use the Savings Account class
+	//// Use the Savings Account class
 
-	std::cout << "\n=== Savings Account ==========================" << std::endl;
-	SavingAccount sav_acc{};
-	sav_acc.deposit(2000.0);
-	sav_acc.withdraw(500.0);
+	//std::cout << "\n=== Savings Account ==========================" << std::endl;
+	//SavingAccount sav_acc{};
+	//sav_acc.deposit(2000.0);
+	//sav_acc.withdraw(500.0);
 
-	std::cout << "\n";
+	//std::cout << "\n";
 
-	SavingAccount* p_sav_acc{ nullptr };
-	p_sav_acc = new SavingAccount();
-	p_sav_acc->deposit(1000.0);
-	p_sav_acc->withdraw(500.0);
-	delete p_sav_acc;
+	//SavingAccount* p_sav_acc{ nullptr };
+	//p_sav_acc = new SavingAccount();
+	//p_sav_acc->deposit(1000.0);
+	//p_sav_acc->withdraw(500.0);
+	//delete p_sav_acc;
 
-	std::cout << "\n==============================================" << std::endl;
+	//std::cout << "\n==============================================" << std::endl;
 
 	return 0;
 }

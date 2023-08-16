@@ -1,13 +1,15 @@
 #pragma once
+
 class Account
 {
-private:
+protected:
 	double totalamt{};
 public:
 	void deposit(double amount);
 	void withdraw(double amount);
 
 	Account();
+	//Account(double interestRate);
 	~Account();
 };
 

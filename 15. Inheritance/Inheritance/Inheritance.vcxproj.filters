@@ -20,12 +20,18 @@
     <ClCompile Include="SavingAccount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PrivateInheritance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SavingAccount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivateInheritance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

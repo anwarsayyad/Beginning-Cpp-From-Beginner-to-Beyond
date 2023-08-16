@@ -1,1 +1,14 @@
-﻿  Inheritance.vcxproj -> C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\x64\Debug\Inheritance.exe
+﻿  Account.cpp
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,10): error C7550: 'Account::{ctor}': the qualified name in this context names a constructor, not a type
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,18): error C2065: 'interestRate': undeclared identifier
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,32): error C2059: syntax error: ':'
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,43): error C2065: 'interestRate': undeclared identifier
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,58): error C2059: syntax error: '{'
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,58): error C2143: syntax error: missing ';' before '{'
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\Account.cpp(14,58): error C2447: '{': missing function header (old-style formal list?)
+  Inheritance.cpp
+  PrivateInheritance.cpp
+C:\Users\aadar\source\repos\Aadarsh131\Beginning-Cpp-From-Beginner-to-Beyond\15. Inheritance\Inheritance\PrivateInheritance.cpp(5,43): error C2614: 'PrivateInheritance': illegal member initialization: 'interestRate' is not a base or member
+  SavingAccount.cpp
+  Generating Code...
