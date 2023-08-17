@@ -1,4 +1,5 @@
 Skipped topics-
 
 section 13. Challenge
-section 14. Operator Overloading, consequently skipped the inheritance of operator overloading(in Inheritance section)
+section 14. Operator Overloading, consequently skipped the inheritance of operator overloading(in 15.Inheritance section)
+section 15. Multiple inheritance(skipped by the tutor), Challenge
