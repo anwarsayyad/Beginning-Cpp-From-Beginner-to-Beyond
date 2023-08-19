@@ -4,6 +4,8 @@
 #include <vector>
 #include <utility>
 
+#include "Array.h"
+
 // Template classes(or structs) are typically completely contained in header files, because technically, the templates are kind of like the declaration
 // So, we would have the template class in Item.h and no Item.cpp file(there might be some problems that can occur if we use create .cpp for the templates, misc topic) would be used
 template <typename T>
@@ -54,7 +56,7 @@ int main() {
 	std::cout << p1.first << ", " << p1.second << std::endl;
 	std::cout << p2.first << ", " << p2.second << std::endl;
 
-	std::cout << "\n=======================Tried to implement some complex(complex, for a beginner me) pair=====================" << std::endl;
+	std::cout << "\n==================Tried to implement some complex(complex, for a beginner me) pair================" << std::endl;
 	std::vector<Item<Item<int>>> vec1{};
 	std::pair<std::string, My_Pair<int, double>> pair1;
 	vec1.push_back(Item<Item<int>>{"aadarsh", { "atul", 30 }});
@@ -68,7 +70,21 @@ int main() {
 	for (const auto& item : utility_pair.second) {
 		std::cout << item.get_value().get_name() << std::endl;
 	}
+
+	std::cout << "\n================================UserDefinedArray==================================" << std::endl;
+	Array<int, 4> arr;
+	arr.fillAllWith(90);
+	arr[1] = 33;
+	arr.getValues();
+	std::cout << "Value from the index: " << arr[3] << std::endl;
+
+	Array < std::string, 10 > arr1{ "start" };
+	arr1[2] = "cool";
+	arr1.getValues();
+	std::cout << "Value from the index: " << arr1[2] << std::endl;
+
 	return 0;
-}
+};
+
 
 //utility_pair.first(vec1.push_back({ "aadarsh",{"atul","shah"} }));
